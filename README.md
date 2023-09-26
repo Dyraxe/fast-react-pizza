@@ -1,4 +1,5 @@
-#Fast-React-Pizza
+# Fast-React-Pizza
+
 Requiriments from the business (course)
 
 1. Very simple application, where users can order one or more pizzas from a menu.
@@ -23,21 +24,21 @@ Requiriments from the business (course)
 
 11. Users should be able to mark their orders as "priority" even after it has been placed.
 
-#Features categories
+# Features categories
 
 1. User | User: / (homepage)
 2. Menu | Pizza menu: /menu
 3. Cart | Cart: /cart
 4. Order| Placing a new order: /order/new |Looking up an order: order/:orderId
 
-#State management
+# State management
 
 1. User -> Global Ui state(no accounts, so stays in app).
 2. Menu -> Global remote state (menu is fetched from API).
 3. Cart -> Global Ui state (no need for API, just stored in app).
 4. Order -> Global remote state (fetched and submitted to API).
 
-#Technology decisions
+# Technology decisions
 
 1. Routing: ReactRouter.
 2. Styling: tailwindcss.

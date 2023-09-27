@@ -1,5 +1,9 @@
 import { formatCurrency } from "../../utils/helpers";
+import PropTypes from "prop-types";
 
+MenuItem.propTypes = {
+  pizza: PropTypes.object.isRequired,
+};
 function MenuItem({ pizza }) {
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 

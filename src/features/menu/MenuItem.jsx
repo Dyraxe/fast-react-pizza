@@ -10,7 +10,16 @@ function MenuItem({ pizza }) {
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
   const dispatch = useDispatch();
   function handleAddToCart() {
-    dispatch(addItem(pizza));
+    const newPizza = {
+      pizzaid: id,
+      name,
+      quantity: 1,
+      unitPrice,
+      totalPrice: unitPrice * 1,
+    };
+    // console.log(id);
+    // console.log(pizza);
+    dispatch(addItem(newPizza));
   }
   return (
     <li className="flex gap-4 py-2">

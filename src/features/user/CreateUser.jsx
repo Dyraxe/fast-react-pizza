@@ -31,13 +31,12 @@ function CreateUser() {
 
       {username !== "" && (
         <div>
-          <Button type="primary" to={"/menu"}>
-            Start ordering
-          </Button>
+          <Button type="primary">Start ordering</Button>
         </div>
       )}
     </form>
   );
 }
 
+//to={"/menu"}
 export default CreateUser;

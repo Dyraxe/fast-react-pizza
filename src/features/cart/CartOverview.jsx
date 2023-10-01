@@ -4,12 +4,7 @@ import { getCartPriceAndQuantity } from "./cartSlice";
 import { formatCurrency } from "../../utils/helpers";
 
 function CartOverview() {
-  const state = useSelector(
-    (state) => state.cart,
-    (a, b) => {
-      return a.cart.length === b.cart.length;
-    },
-  );
+  const state = useSelector((state) => state.cart);
 
   const { total, quantity } = getCartPriceAndQuantity(state);
   if (!quantity) return null;

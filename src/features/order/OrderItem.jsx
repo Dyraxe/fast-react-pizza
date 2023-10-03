@@ -1,7 +1,6 @@
 import { formatCurrency } from "../../utils/helpers";
 function OrderItem({ item, isLoadingIngredients, ingredients, pizza }) {
   const { quantity, name, totalPrice } = item;
-  console.log(ingredients);
   return (
     <li className="pý-3 space-y-1">
       <div className="flex items-center justify-between gap-4 text-sm">
